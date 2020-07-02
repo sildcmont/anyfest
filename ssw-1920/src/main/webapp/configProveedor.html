@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <!-- Aqui van todos los metadatos de la pagina -->
+    <meta charset="utf-8">
+<title>Anyfest - Registrarse como proveedor</title>
+<!-- Importar css -->
+<link rel="stylesheet" type="text/css" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Aqui van todos los datos de la pagina -->
+    <!-- Comienzo del header -->
+    <header style="display: inline-block; background-color: #ffffff;">
+
+        <!-- <head>Anyfest - Aquí tiene que ir el logo en forma de imagen</head> -->
+        <div class="cabecera">
+            <div style="float:left">
+                <a class="boton" href="index.html"><img style="margin: 20px 20px; max-width: 15%; width: auto;" src="img/anyfest-logo-transp.png" />
+                </a>
+            </div>
+            <div style="float: right; padding-top: 30px;">
+                <a class="boton" href="home.html">Cerrar sesión</a>
+      <a class="boton" href="configProveedor.html">Nombre usuario</a>
+            </div>
+        </div>
+
+        
+    </header>
+    <!-- Fin del header -->
+
+    <!-- Comienzo del formulario -->
+    <!--<div style="padding-top: 100px;">-->
+    <div class="signupprovider">
+        <form method="post" action="update">
+            <p class="center"><label style="font-family: 'Montserrat',sans-serif">Nuevo nombre</label></p>
+            <input name="nombre" type="text" size="25" maxlength="30" placeholder="Nuevo nombre...">
+            <p class="center" class="Montserrat">Nueva categoría
+                <select name="categoria" id="categoria">
+            <option selected></option>
+            <option>Catering</option>
+            <option>Entretenimiento</option>
+            <option>Fotografía</option>
+          </select>
+            </p>
+            <p class="center"><label class="Montserrat">Nuevo correo electrónico</label></p>
+            <input style="font-family: 'Montserrat',sans-serif" type="email" id="mail" name="mail" placeholder="Nuevo correo electrónico...">
+            <p class="center"><label class="Montserrat">Nuevo teléfono de contacto</label></p>
+            <input name="telefono" type="tel" size="25" maxlength="30" placeholder="Nuevo teléfono...">
+            <p class="center"><label class="Montserrat">Nueva descripción</label></p>
+            <input name="descripcion" type="text" size="25" maxlength="500" placeholder="Nueva descripción...">
+            <p class="center"><label class="Montserrat" for="pwd">Nueva password</label></p>
+            <input name="contraseña" type="password" size="25" maxlength="25" placeholder="Nueva password...">
+            <button class='registroProveedor' class="sans-serif" type="button">Actualizar</button>
+        </form>
+    </div>
+
+
+    <!-- Comienzo del footer -->
+    <footer class="footer">
+
+        <a class="boton" href="anyfest.com">¿Quiénes somos?</a>
+
+        <a class="boton" href="anyfest.com/jobs">Trabaja con nosotros</a>
+
+        <a class="boton" href="anyfest.com/help">¿Necesitas ayuda?</a>
+
+        <a class="boton" href="anyfest.com/tos">Condiciones de uso</a>
+
+    </footer>
+    <!-- Aqui va el script para que el navegador interprete todo el html antes de aplicar JS -->
+    <!--<script src="my-js-file.js"></script>-->
+</body>
+
+</html>
